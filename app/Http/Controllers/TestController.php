@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\DB;
 class TestController extends Controller
 {
     public function getData(){
-        return DB::table('testdbs')->get();
+        $data=DB::table('testdbs')->get();
+        return $data;
     }
 }
